@@ -82,12 +82,10 @@ export default {
 
 <style lang='stylus' scoped>
   .recommend-title
-    margin-top: .12rem
     width: 100%
-    height: .46rem
-    line-height: .46rem
-    font-size: .26rem
-    color: #333
+    height: .8rem
+    line-height: .8rem
+    font-size: .28rem
     text-indent: .2rem
     background: #eee
   .item
@@ -104,6 +102,8 @@ export default {
     .item-info
       flex: 1
       .item-title
+        width: 80%
+        height: .4rem
         font-size: .36rem
         margin-top: .2rem
         text-indent: .2rem
@@ -112,6 +112,7 @@ export default {
         font-size: .28rem
         text-indent: .2rem
         padding-top: .15rem
+        ellipsis()
         color: #888
         .iconfont
           color: #fbd041
