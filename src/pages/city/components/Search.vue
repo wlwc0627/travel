@@ -27,6 +27,7 @@ export default {
       width: 98%
       height: .68rem
       outline: none
+      border: 0
       border-radius: .1rem
       text-align: center
       color: #666

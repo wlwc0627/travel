@@ -3,13 +3,13 @@
     <div class="header-left">
      <i class="iconfont">&#xe606;</i>
     </div>
-    <div class="header-input">
+    <router-link to='/city' tag='div' class="header-input">
       <i class="iconfont">&#xe62b;</i>
       输入城市/景点/游玩主题
-    </div>
+    </router-link>
     <router-link to='/city'>
       <div class="header-right">
-        北京
+        宁波
         <i class="iconfont">&#xe6bd;</i>
       </div>
     </router-link>

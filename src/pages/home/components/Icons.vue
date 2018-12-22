@@ -88,7 +88,7 @@ export default {
   .icon
     width: 25%
     height: 0
-    padding-bottom: 25%
+    padding-bottom: 24%
     float: left
     text-align: center
     .icon-img

@@ -4,7 +4,7 @@
             周末去哪儿
         </div>
         <ul>
-            <li class="item" v-for='item of weekendList' :key='item.id'>
+            <router-link tag='li' to='/detail' class="item" v-for='item of weekendList' :key='item.id'>
                 <div class="img-wrapper">
                     <img class="img" :src="item.imgUrl" />
                 </div>
@@ -16,7 +16,7 @@
                         {{item.desc}}
                     </p>
                 </div>
-            </li>
+            </router-link>
         </ul>
     </div>
 </template>

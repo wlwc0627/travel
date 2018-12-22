@@ -4,32 +4,34 @@
             热销推荐
         </div>
         <ul>
-            <li
+            <router-link
+              tag='li'
+              :to="'/detail/'+item.id"
               class="item border-bottom"
               v-for='item of recommendList'
               :key='item.id'
             >
-                <img class="item-img" :src="item.imgUrl" />
-                <div class="item-info">
-                    <p class="item-title">{{item.title}}</p>
-                    <p class="item-desc">
-                        <i class="iconfont">&#xe60c;</i>
-                        <i class="iconfont">&#xe60c;</i>
-                        <i class="iconfont">&#xe60c;</i>
-                        <i class="iconfont">&#xe60c;</i>
-                        <i class="iconfont">&#xe60c;</i>
-                        {{item.comments}}条评论
-                    </p>
-                    <p class="item-price">
-                        <i class="iconfont">&#xe66b;</i>
-                        <span class="price-num">{{item.priceNum}}</span>&nbsp;起
-                        <span class="item-city">{{item.city }}</span>
-                    </p>
-                </div>
-            </li>
+              <img class="item-img" :src="item.imgUrl" />
+              <div class="item-info">
+                  <p class="item-title">{{item.title}}</p>
+                  <p class="item-desc">
+                      <i class="iconfont">&#xe60c;</i>
+                      <i class="iconfont">&#xe60c;</i>
+                      <i class="iconfont">&#xe60c;</i>
+                      <i class="iconfont">&#xe60c;</i>
+                      <i class="iconfont">&#xe60c;</i>
+                      {{item.comments}}条评论
+                  </p>
+                  <p class="item-price">
+                      <i class="iconfont">&#xe66b;</i>
+                      <span class="price-num">{{item.priceNum}}</span>&nbsp;起
+                      <span class="item-city">{{item.city }}</span>
+                  </p>
+              </div>
+            </router-link>
         </ul>
         <div class="more-item border-bottom">
-            <a href="#" class="item-url">更多推荐</a>
+            <a href="/" class="item-url">更多推荐</a>
         </div>
     </div>
 </template>
