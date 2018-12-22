@@ -11,9 +11,6 @@
                     5
                 </div>
             </div>
-            <router-link to='/' tag='div' class="header-left">
-                <i class="iconfont">&#xe606;</i>
-            </router-link>
         </div>
         <common-gallary v-show='showGallary' @close='handleGallaryClose'></common-gallary>
     </div>
@@ -80,20 +77,4 @@ export default {
         .iconfont
           color: #fff
           font-size: .26rem
-    .header-left
-      position: absolute
-      top: .22rem
-      left: .22rem
-      z-index: 2
-      width: .7rem
-      height: .7rem
-      background: #333
-      box-sizing: border-box
-      border-radius: 50%
-      .iconfont
-        position: absolute
-        top: .16rem
-        left: .1rem
-        color: #fff
-        font-size: .4rem
 </style>
