@@ -5,7 +5,7 @@
         <detail-info></detail-info>
         <detail-recommend></detail-recommend>
         <detail-list></detail-list>
-        <div class="content"></div>
+        <home-footer></home-footer>
     </div>
 </template>
 
@@ -15,6 +15,7 @@ import DetailHeader from './components/Header'
 import DetailList from './components/List'
 import DetailInfo from './components/Info'
 import DetailRecommend from './components/Recommend'
+import HomeFooter from '../home/components/Footer'
 export default {
   name: 'Detail',
   components: {
@@ -22,12 +23,11 @@ export default {
     DetailHeader,
     DetailList,
     DetailInfo,
-    DetailRecommend
+    DetailRecommend,
+    HomeFooter
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-  .content
-    height: 50rem
 </style>
