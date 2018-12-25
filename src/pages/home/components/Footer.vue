@@ -17,26 +17,27 @@
                     <li class="item">
                         更多<i class="iconfont">&#xe6bd;</i>
                     </li>
-                    <router-link tag='li' to='/'>
-                        登录
-                    </router-link>
-                    <router-link tag='li' to='/'>
-                        我的订单
-                    </router-link>
-                    <router-link tag='li' to='/'>
-                        最近浏览
-                    </router-link>
-                    <router-link tag='li' to='/'>
-                        关于我们
-                    </router-link>
                 </ul>
             </div>
             <div class="entry">
-
+                <router-link tag='div' class="entry-port" to='/login'>
+                    登录
+                </router-link>
+                <router-link tag='div' class="entry-port" to='/'>
+                    我的订单
+                </router-link>
+                <router-link tag='div' class="entry-port" to='/'>
+                    最近浏览
+                </router-link>
+                <router-link tag='div' class="entry-port" to='/about'>
+                    关于我们
+                </router-link>
             </div>
         </div>
         <div class="footer-bottom">
-
+            <router-link to='/' tag='div' class="change active">触屏版</router-link>
+            <router-link to='/' tag='div' class="change">电脑版</router-link>
+            <p class="icp">Qunar 京ICP备05021087意见反馈</p>
         </div>
     </div>
 </template>
@@ -59,7 +60,7 @@ export default {
     color: #888
   .icons
     width: 100%
-    height: 1.5rem
+    height: .7rem
     background: #eee
     .item
       float: left
@@ -69,4 +70,36 @@ export default {
       font-size: .26rem
       line-height: .7rem
       text-align: center
+  .entry
+    background: #eee
+    width: 100%
+    height: .5rem
+    line-height: .5rem
+    .entry-port
+      width: 25%
+      float: left
+      font-size: .24rem
+      text-align: center
+      color: #12bffd
+  .footer-bottom
+    overflow: hidden
+    width: 100%
+    height: 1.16rem
+    text-align: center
+    color: #333
+    .change
+      width: 50%
+      height: .48rem
+      float: left
+      font-size: .26rem
+      padding: .1rem .2rem 0 .3rem
+      box-sizing: border-box
+    .icp
+      width: 100%
+      height: .8rem
+      line-height: .8rem
+      font-size: .24rem
+      padding-bottom: .3rem
+  .active
+    color: #12bffd
 </style>

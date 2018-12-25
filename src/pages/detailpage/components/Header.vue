@@ -28,7 +28,7 @@ export default {
     font-size: .32rem
     text-align: center
   .header-left
-      position: absolute
+      position: fixed
       top: .12rem
       left: .22rem
       z-index: 3
